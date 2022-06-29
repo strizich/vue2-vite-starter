@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "types": [
+      "vite/client",
+      "@types/node",
+      "cypress"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "cypress/**/*"
+  ],
+  "plugins": [
+    {
+      "name": "typescript-eslint-language-service"
+    }
+  ]
+}

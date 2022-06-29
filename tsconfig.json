@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "strict": false,
     "target": "esnext",
     "module": "esnext",
+    "lib": ["esnext", "dom"],
     "moduleResolution": "node",
     "importHelpers": true,
     "isolatedModules": true,
@@ -20,9 +22,8 @@
     "src/**/*",
     "cypress/**/*"
   ],
-  "plugins": [
-    {
-      "name": "typescript-eslint-language-service"
-    }
-  ]
+  "exclude": [
+    "node_modules/**/*",
+  ],
+  "plugins": [{"name": "typescript-eslint-language-service"}],
 }

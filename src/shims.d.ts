@@ -1,3 +1,5 @@
+declare type VueComponent = Vue.ComponentOptions<any> | Vue.VueProxy;
+
 declare module "*.vue" {
   import { defineComponent } from "vue";
   const Component: ReturnType<typeof defineComponent>;

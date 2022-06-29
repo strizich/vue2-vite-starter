@@ -1,17 +1,12 @@
-/// <reference types="vitest" />
-
 import path from 'path'
 import vue from '@vitejs/plugin-vue2'
 import { defineConfig } from 'vitest/config'
-import eslint from 'vite-plugin-eslint'
 import VitePluginHtmlEnv from 'vite-plugin-html-env'
 
 // const API_URL = import.meta.env.VITE_APP_API_URL
-
 const defaultConfig = {
   plugins: [
     vue(),
-    eslint(),
     VitePluginHtmlEnv(),
   ],
   test: {

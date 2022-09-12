@@ -1,11 +1,17 @@
 {
   "extends": "@antfu",
   "rules": {
+    "@typescript-eslint/semi": ["error", "always"],
+    "vue/component-tags-order": "off",
+    "vue/custom-event-name-casing": ["error", "kebab-case"],
+    "vue/component-name-in-template-casing": ["error", "kebab-case", {
+      "registeredComponentsOnly": true,
+      "ignores": []
+    }],
     "vue/html-self-closing": ["error", {
       "html": {
         "void": "any"
-      },
-    }],
-    "vue/component-tags-order": "off"
+      }
+    }]
   }
 }
